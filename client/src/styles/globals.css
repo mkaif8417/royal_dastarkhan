@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --qode-background-color: #102B2A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--qode-background-color);
+  color: white;
+  font-family: sans-serif;
+}
