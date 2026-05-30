@@ -3,7 +3,17 @@
 :root {
   --qode-background-color: #102B2A;
 }
+:root {
+  --gold: #C9A581;
+}
 
+body {
+  background: #102B2A;
+}
+
+.fidalgo-frame {
+  border: 1px solid rgba(201, 165, 129, 0.15);
+}
 * {
   margin: 0;
   padding: 0;
