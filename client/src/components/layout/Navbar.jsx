@@ -1,20 +1,44 @@
-const Navbar = () => {
-  return (
-    <nav className="fixed top-0 left-0 w-full z-50  /70 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-yellow-500">
-          Royal Dastarkhan
-        </h1>
+import { useState } from "react";
+import logo from "../../assets/images/final_logo.png";
 
-        <ul className="hidden md:flex gap-8 text-white">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+const Navbar = () => {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <header className="fixed top-0 left-0 w-full z-50">
+      <div className="relative w-full h-24">
+
+        {/* Logo */}
+        <div className="absolute left-[8%] md:left-[10%] lg:left-[10%] top-1/2 -translate-y-1/2">
+          <img
+            src={logo}
+            alt="Royal Dastarkhan"
+            className="h-16 md:h-35 lg:h-45  w-auto object-contain"
+          />
+        </div>
+
+        {/* Hamburger */}
+        <button
+          aria-label="Menu"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          className="absolute right-[8%] md:right-[10%] lg:right-[10%] top-1/2 -translate-y-1/2 flex flex-col items-end gap-2 cursor-pointer"
+        >
+          <span
+            className={`h-[2px] bg-[#C9A581] transition-all duration-300 ${
+              hovered ? "w-8" : "w-12"
+            }`}
+          />
+
+          <span
+            className={`h-[2px] bg-[#C9A581] transition-all duration-300 ${
+              hovered ? "w-12" : "w-8"
+            }`}
+          />
+        </button>
+
       </div>
-    </nav>
+    </header>
   );
 };
 
