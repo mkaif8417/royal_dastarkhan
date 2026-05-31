@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="relative w-full">
 
         {/* Navbar */}
-        <div className="relative h-32">
+        <div className="relative  h-24 md:h-28 lg:h-32">
 
           {/* Logo */}
           <div className="absolute left-[8%] md:left-[10%] lg:left-[10%] top-1/2 -translate-y-1/2">
@@ -39,6 +39,7 @@ const Navbar = () => {
             onMouseLeave={() => setHovered(false)}
             className="absolute right-[8%] md:right-[10%] lg:right-[10%] top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center cursor-pointer"
           >
+            
             {menuOpen ? (
               <div className="relative w-10 h-10">
                 <svg
@@ -102,10 +103,12 @@ const Navbar = () => {
                   }`}
                 />
               </div>
+              
             )}
+            
           </button>
         </div>
-
+<div className="absolute top-20 md:top-28 lg:top-32 left-8 right-8 md:left-16 md:right-16 lg:left-40 lg:right-40 h-px bg-[#C9A581]/20"></div>
         {/* Sliding Menu */}
         <div
           className={`overflow-hidden transition-all duration-700 ease-in-out ${
@@ -120,8 +123,8 @@ const Navbar = () => {
                 to={link.path}
                 onClick={() => setMenuOpen(false)}
                 className="
-                  text-[#C9A581] text-3xl
-                  md:text-4xl
+                  text-[#C9A581] 
+                text-2xl sm:text-2xl md:text-3xl lg:text-3xl
                   font-light
                   tracking-wide
                   transition-all
@@ -136,9 +139,10 @@ const Navbar = () => {
 
           </div>
         </div>
-
       </div>
-    </header>
+<div className="absolute top-4 md:top-4 left-1/2 -translate-x-1/2 w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] h-px bg-[#C9A581]/20"></div>
+    </header> 
+    
   );
 };
 

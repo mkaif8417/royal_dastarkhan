@@ -8,31 +8,37 @@ function App() {
       {/* Luxury Frame */}
       <div className="relative min-h-[calc(100vh-2rem)] fidalgo-frame md:min-h-[calc(100vh-3rem)]">
 {/* Vertical Lines */}
-<div className="absolute top-20 bottom-20 left-18 w-px bg-[#C9A581]/20"></div>
-<div className="absolute top-20 bottom-20 right-18 w-px bg-[#C9A581]/20"></div>
+<div className="absolute top-24 md:top-32 bottom-16 md:bottom-20 left-4 md:left-8 lg:left-12 w-px bg-[#C9A581]/20"></div>
+
+<div className="absolute top-24 md:top-32 bottom-16 md:bottom-20 right-4 md:right-8 lg:right-12 w-px bg-[#C9A581]/20"></div>
 
 {/* Horizontal Lines */}
-<div className="absolute left-20 right-20 top-6 h-px bg-[#C9A581]/20"></div>
-<div className="absolute left-20 right-20 bottom-6 h-px bg-[#C9A581]/20"></div>
+{/* <div className="absolute top-4 left-8 md:left-16 lg:left-24 right-8 md:right-16 lg:right-24 h-px bg-[#C9A581]/20"></div> */}
 
-{/* Corners */}
-{/* left top */}
-<div className="absolute top-4 left-18 w-20 h-20 border-t border-l border-[#C9A581]"></div>
-<div className="absolute top-8 left-22 w-10 h-10 border-t border-l border-[#C9A581]"></div>
-{/* right top */}
-<div className="absolute top-4 right-18 w-20 h-20 border-t border-r border-[#C9A581]"></div>
-<div className="absolute top-8 right-22 w-10 h-10 border-t border-r border-[#C9A581]"></div>
-{/* bottom left */}
-<div className="absolute bottom-8 left-18 w-20 h-20 border-b border-l border-[#C9A581]"></div>
-<div className="absolute bottom-12 left-22 w-10 h-10 border-b border-l border-[#C9A581]"></div>
-{/* bottom right */}
-<div className="absolute bottom-8 right-18 w-20 h-20 border-b border-r border-[#C9A581]"></div>
-<div className="absolute bottom-12 right-22 w-10 h-10 border-b border-r border-[#C9A581]"></div>
+<div className="absolute bottom-4 left-8 md:left-16 lg:left-24 right-8 md:right-16 lg:right-24 h-px bg-[#C9A581]/20"></div>
+{/* Top Left */}
+<div className="absolute top-4 left-4 md:left-8 lg:left-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-t border-l border-[#C9A581]"></div>
 
+<div className="absolute top-6 left-6 lg:top-8 md:left-10 lg:left-16 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-t border-l border-[#C9A581]"></div>
+
+{/* Top Right */}
+<div className="absolute top-4 right-4 md:right-8 lg:right-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-t border-r border-[#C9A581]"></div>
+
+<div className="absolute top-6 right-6 lg:top-8  md:right-10 lg:right-16 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-t border-r border-[#C9A581]"></div>
+
+{/* Bottom Left */}
+<div className="absolute bottom-8 left-4 md:left-8 lg:left-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-b border-l border-[#C9A581]"></div>
+
+<div className="absolute bottom-10 left-6 md:left-10 lg:left-16 lg:bottom-12 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-b border-l border-[#C9A581]"></div>
+
+{/* Bottom Right */}
+<div className="absolute bottom-8 right-4 md:right-8 lg:right-12  w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-b border-r border-[#C9A581]"></div>
+
+<div className="absolute bottom-10 right-6 md:right-10 lg:right-16 lg:bottom-12 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-b border-r border-[#C9A581]"></div>
 
 
         {/* Content */}
-        <div className="relative px-6 md:px-10 lg:px-14">
+        <div className="relative px-4 sm:px-6 md:px-10 lg:px-14">
           <Navbar />
 
           <Hero />
