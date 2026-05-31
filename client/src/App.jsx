@@ -1,6 +1,7 @@
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/home/Hero";
 import Footer from "./components/layout/Footer";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
@@ -40,13 +41,10 @@ function App() {
         {/* Content */}
         <div className="relative px-4 sm:px-6 md:px-10 lg:px-14">
           <Navbar />
+<AppRoutes />
 
-          <Hero />
-          <Hero />
-          <Hero />
-          <Hero />
 
-          <Footer />
+    
         </div>
 
       </div>
