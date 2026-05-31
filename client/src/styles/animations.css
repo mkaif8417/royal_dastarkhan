@@ -1,0 +1,34 @@
+/* Cross draw-on animation */
+.cross-line-1,
+.cross-line-2 {
+  stroke-dasharray: 34;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0s;
+}
+
+/* On mount: animate drawing in */
+.cross-svg .cross-line-1 {
+  animation: drawLine 0.35s ease forwards;
+}
+
+.cross-svg .cross-line-2 {
+  animation: drawLine 0.35s ease 0.15s both;
+}
+
+/* On hover: redraw */
+.cross-svg:hover .cross-line-1 {
+  animation: drawLine 0.35s ease forwards;
+}
+
+.cross-svg:hover .cross-line-2 {
+  animation: drawLine 0.35s ease 0.15s both;
+}
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 34;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
