@@ -20,12 +20,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50">
 
-      {menuOpen && (
-        <div
-          className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
-          onClick={() => setMenuOpen(false)}
-        ></div>
-      )}
+  
 
       <div className="relative w-full">
 
@@ -44,7 +39,7 @@ const Navbar = () => {
             onClick={() => setMenuOpen(!menuOpen)}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
-            className="absolute right-[8%] md:right-[10%] lg:right-[10%] top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center cursor-pointer z-50"
+            className="absolute right-[8%] md:right-[10%] lg:right-[10%] top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center cursor-pointer z-[60]"
           >
             {menuOpen ? (
               <div
@@ -79,26 +74,72 @@ const Navbar = () => {
 
         <div className="absolute top-20 md:top-28 lg:top-32 left-8 right-8 md:left-16 md:right-16 lg:left-40 lg:right-40 h-px bg-[#C9A581]/20"></div>
 
-        <div
-          className={`relative z-50 overflow-hidden transition-all duration-700 ease-in-out ${
-            menuOpen ? "max-h-[700px] opacity-100" : "max-h-0 opacity-0"
-          }`}
-        >
-          <div className="flex flex-col items-center gap-8 py-10">
-            {links.map((link, index) => (
-              <Link
-                key={index}
-                to={link.path}
-                onClick={() => setMenuOpen(false)}
-                className="relative text-[#C9A581] text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-light tracking-wide transition-all duration-300 hover:tracking-[8px] hover:scale-105 group"
-              >
-                {link.name}
-                {/* ✅ underline on each nav link */}
-                <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-[#C9A581] transition-all duration-500 group-hover:w-full" />
-              </Link>
-            ))}
-          </div>
-        </div>
+   {/* Sliding Menu */}
+{/* Sliding Menu */}
+<div
+  className={`fixed
+top-[7.5rem] md:top-[8.5rem] lg:top-[9.5rem]
+ left-[2.5%] w-[95%]
+md:left-[5%] md:w-[90%]
+lg:left-[10%] lg:w-[80%]
+  h-[55vh]
+  z-[45]
+  border-2 border-[#C9A581]/20
+  bg-[#102B2A]
+  origin-top
+  transition-all
+  duration-700
+  ease-[cubic-bezier(0.22,1,0.36,1)]
+  ${
+    menuOpen
+      ? "scale-y-100 opacity-100"
+      : "scale-y-0 opacity-0 pointer-events-none"
+  }
+`}
+>
+  <div className="flex flex-col items-center justify-center h-full gap-2 md:gap-3 lg:gap-4">
+
+    {links.map((link, index) => (
+      <Link
+        key={index}
+        to={link.path}
+        onClick={() => setMenuOpen(false)}
+        className="
+          relative
+          text-[#C9A581]
+          text-2xl
+          sm:text-1xl
+          md:text-1xl
+          lg:text-2xl
+          font-light
+          tracking-wide
+          transition-all
+          duration-300
+          hover:tracking-[8px]
+          hover:scale-105
+          group
+        "
+      >
+        {link.name}
+
+        <span
+          className="
+            absolute
+            left-0
+            -bottom-1
+            h-[1px]
+            w-0
+            bg-[#C9A581]
+            transition-all
+            duration-500
+            group-hover:w-full
+          "
+        />
+      </Link>
+    ))}
+
+  </div>
+</div>
       </div>
 
       <div className="absolute top-4 md:top-4 left-1/2 -translate-x-1/2 w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] h-px bg-[#C9A581]/20"></div>
