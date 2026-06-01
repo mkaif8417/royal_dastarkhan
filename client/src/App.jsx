@@ -41,9 +41,13 @@ function App() {
         {/* Content */}
         <div className="relative px-4 sm:px-6 md:px-10 lg:px-14">
           <Navbar />
+<Hero/>
 <AppRoutes />
 
-
+<Hero/>
+<Hero/>
+<Hero/>
+<Hero/>
     
         </div>
 

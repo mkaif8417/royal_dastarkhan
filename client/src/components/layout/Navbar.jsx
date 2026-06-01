@@ -18,13 +18,15 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50">
-
-  
+    <header className="fixed top-0 left-0 w-full z-50 ">  
 
       <div className="relative w-full">
+        
+        
+<div className="absolute top-0 left-[5%] right-[5%] md:left-[8%] md:right-[8%] lg:left-[10%] lg:right-[10%] h-24 md:h-28 lg:h-32 backdrop-blur-md bg-[#102B2A]/60 rounded-b-sm z-0" />
 
         <div className="relative h-24 md:h-28 lg:h-32">
+          
 
           <div className="absolute left-[8%] md:left-[10%] lg:left-[10%] top-1/2 -translate-y-1/2">
             <img
@@ -78,14 +80,14 @@ const Navbar = () => {
 {/* Sliding Menu */}
 <div
   className={`fixed
-top-[7.5rem] md:top-[8.5rem] lg:top-[9.5rem]
+top-[6rem] md:top-[7rem] lg:top-[8rem]
  left-[2.5%] w-[95%]
 md:left-[5%] md:w-[90%]
 lg:left-[10%] lg:w-[80%]
   h-[55vh]
   z-[45]
   border-2 border-[#C9A581]/20
-  bg-[#102B2A]
+  bg-[#102B2A]/80 backdrop-blur-md
   origin-top
   transition-all
   duration-700
