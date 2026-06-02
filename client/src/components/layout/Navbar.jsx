@@ -21,11 +21,11 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 w-full z-50 ">  
 
       <div className="relative w-full">
-        
-        
-<div className="absolute top-0 left-[5%] right-[5%] md:left-[8%] md:right-[8%] lg:left-[10%] lg:right-[10%] h-24 md:h-28 lg:h-32 backdrop-blur-md bg-[#102B2A]/60 rounded-b-sm z-0" />
 
-        <div className="relative h-24 md:h-28 lg:h-32">
+        
+<div className="absolute top-0 left-[4%] right-[4%] md:left-[8%] md:right-[8%] lg:left-[10%] lg:right-[10%] h-20 md:h-28 lg:h-32 backdrop-blur-md bg-[#102B2A]/60 rounded-b-sm z-[-1]" />
+
+      <div className="relative h-24 md:h-28 lg:h-32 z-10">
           
 
           <div className="absolute left-[8%] md:left-[10%] lg:left-[10%] top-1/2 -translate-y-1/2">
@@ -144,7 +144,7 @@ lg:left-[10%] lg:w-[80%]
 </div>
       </div>
 
-      <div className="absolute top-4 md:top-4 left-1/2 -translate-x-1/2 w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] h-px bg-[#C9A581]/20"></div>
+      <div className="absolute top-1 md:top-4 left-1/2 -translate-x-1/2 w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] h-px bg-[#C9A581]/20"></div>
     </header>
   );
 };
