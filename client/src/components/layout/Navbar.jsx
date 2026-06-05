@@ -81,6 +81,7 @@ const Navbar = () => {
               <div className="flex flex-col items-end gap-2">
                 <span className={`h-[1.5px] bg-[#C9A581] transition-all duration-300 ${hovered ? "w-8" : "w-12"}`} />
                 <span className={`h-[1.5px] bg-[#C9A581] transition-all duration-300 ${hovered ? "w-12" : "w-8"}`} />
+                <span className={`h-[1.5px] bg-[#C9A581] transition-all duration-300 ${hovered ? "w-8" : "w-12"}`} />
               </div>
             )}
           </button>
@@ -92,8 +93,8 @@ const Navbar = () => {
 {/* Sliding Menu */}
 <div
   className={`fixed
-top-[6rem] md:top-[7rem] lg:top-[8rem]
- left-[2.5%] w-[95%]
+top-[5rem] md:top-[7rem] lg:top-[8rem]
+ left-[4%] w-[92%]
 md:left-[5%] md:w-[90%]
 lg:left-[10%] lg:w-[80%]
   h-[55vh]
@@ -102,8 +103,8 @@ lg:left-[10%] lg:w-[80%]
   bg-[#102B2A]/80 backdrop-blur-md
   origin-top
   transition-all
-  duration-700
-  ease-[cubic-bezier(0.22,1,0.36,1)]
+  duration-900
+  ease-[cubic-bezier(0.22,1,0.36,1.5)]
   ${
     menuOpen
       ? "scale-y-100 opacity-100"
