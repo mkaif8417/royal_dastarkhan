@@ -21,6 +21,18 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 w-full z-50 ">  
 
       <div className="relative w-full">
+        {/* top left */}
+   <div className=" absolute  top-1 left-1 md:left-8 lg:left-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-t border-l border-[#C9A581]"></div>
+
+<div className=" absolute top-3 left-3 lg:top-6 md:left-10 lg:left-16 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-t border-l border-[#C9A581]"></div>
+
+
+{/* top right */}
+<div className="absolute  top-1 right-1 md:right-8 lg:right-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-t border-r border-[#C9A581]"></div>
+
+<div className="absolute  top-3 right-3 lg:top-6  md:right-10 lg:right-16 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-t border-r border-[#C9A581]"></div> 
+
+
 
         
 <div className="absolute top-0 left-[4%] right-[4%] md:left-[8%] md:right-[8%] lg:left-[10%] lg:right-[10%] h-20 md:h-28 lg:h-32 backdrop-blur-md bg-[#102B2A]/60 rounded-b-sm z-[-1]" />
