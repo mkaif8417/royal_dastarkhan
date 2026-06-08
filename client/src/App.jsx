@@ -13,17 +13,13 @@ function App() {
 
 <div className="absolute top-24 md:top-32 bottom-16 md:bottom-20 right-4 md:right-8 lg:right-12 w-px bg-[#C9A581]/20"></div>
 
-{/* Horizontal Lines */}
-{/* <div className="absolute top-4 left-8 md:left-16 lg:left-24 right-8 md:right-16 lg:right-24 h-px bg-[#C9A581]/20"></div> */}
-
 <div className="absolute bottom-4 left-8 md:left-16 lg:left-24 right-8 md:right-16 lg:right-24 h-px bg-[#C9A581]/20"></div>
 {/* Top Left */}
-{/* <div className=" absolute  top-1 left-1 md:left-8 lg:left-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-t border-l border-[#C9A581]"></div> */}
 
 <div className=" absolute top-1 left-5 lg:top-6 md:left-10 lg:left-16 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-t border-l border-[#C9A581]"></div>
 
 {/* Top Right*/}
-{/* <div className="absolute  top-1 right-1 md:right-8 lg:right-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-t border-r border-[#C9A581]"></div> */}
+
 
 <div className="absolute  top-1 right-5 lg:top-6  md:right-10 lg:right-16 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-t border-r border-[#C9A581]"></div> 
 
