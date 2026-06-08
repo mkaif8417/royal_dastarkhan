@@ -44,10 +44,10 @@ function App() {
 <Hero/>
 <AppRoutes />
 
+{/* <Hero/>
 <Hero/>
 <Hero/>
-<Hero/>
-<Hero/>
+<Hero/> */}
     
         </div>
 

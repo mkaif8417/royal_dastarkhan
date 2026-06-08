@@ -89,7 +89,6 @@ const Navbar = () => {
 
         <div className="absolute top-20 md:top-28 lg:top-32 left-8 right-8 md:left-16 md:right-16 lg:left-40 lg:right-40 h-px bg-[#C9A581]/20"></div>
 
-   {/* Sliding Menu */}
 {/* Sliding Menu */}
 <div
   className={`fixed
