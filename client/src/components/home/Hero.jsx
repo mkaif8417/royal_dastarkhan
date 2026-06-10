@@ -1,4 +1,6 @@
 import heroImg from "../../assets/images/h13-img1.jpg";
+import heroImgleft from "../../assets/images/Group-1260.png";
+import heroImgright from "../../assets/images/Group-1266.png";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -11,7 +13,22 @@ const Hero = () => {
   }, []);
 
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+<>
+
+
+    <div style={{ display: "flex", justifyContent: "center",alignItems:"center",gap: "100px" }}>
+      <div>
+      <img src={heroImgleft} alt="" 
+      style={{
+        marginTop: "12%",
+        width: "100px",
+        height: "150px",
+      }}
+      />
+      </div>
+      <div>
+
+      
       <img
         src={heroImg}
         alt="Heroimg"
@@ -36,7 +53,25 @@ const Hero = () => {
           cursor: "pointer",
         }}
       />
+      </div>
+      <div>
+
+    
+<img src={heroImgright} alt="" 
+      style={{
+          marginTop: "12%",
+          width: "100px",
+          height: "150px",
+          }}
+          p
+      />
+      <p>Opening hours:
+
+Mon – Thu: 10.00 am – 01:00 am Fri – Sun: 10:00 am – 02:00 am</p>
+  </div>
     </div>
+
+    </>
   );
 };
 
