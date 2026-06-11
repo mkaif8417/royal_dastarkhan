@@ -18,27 +18,27 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 ">  
+    <header className="fixed top-0 left-0 w-full z-50 ">
 
       <div className="relative w-full">
         {/* top left */}
-   <div className=" absolute  top-1 left-1 md:left-8 lg:left-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-t border-l border-[#C9A581]"></div>
+        <div className=" absolute  top-1 left-1 md:left-8 lg:left-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-t border-l border-[#C9A581]"></div>
 
-<div className=" absolute top-3 left-3 lg:top-6 md:left-10 lg:left-16 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-t border-l border-[#C9A581]"></div>
-
-
-{/* top right */}
-<div className="absolute  top-1 right-1 md:right-8 lg:right-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-t border-r border-[#C9A581]"></div>
-
-<div className="absolute  top-3 right-3 lg:top-6  md:right-10 lg:right-16 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-t border-r border-[#C9A581]"></div> 
+        <div className=" absolute top-3 left-3 lg:top-6 md:left-10 lg:left-16 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-t border-l border-[#C9A581]"></div>
 
 
+        {/* top right */}
+        <div className="absolute  top-1 right-1 md:right-8 lg:right-12 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 border-t border-r border-[#C9A581]"></div>
 
-        
-<div className="absolute top-0 left-[4%] right-[4%] md:left-[8%] md:right-[8%] lg:left-[10%] lg:right-[10%] h-20 md:h-28 lg:h-32 backdrop-blur-md bg-[#102B2A]/60 rounded-b-sm z-[-1]" />
+        <div className="absolute  top-3 right-3 lg:top-6  md:right-10 lg:right-16 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 border-t border-r border-[#C9A581]"></div>
 
-      <div className="relative h-24 md:h-28 lg:h-32 z-10">
-          
+
+
+
+        <div className="absolute top-0 left-[4%] right-[4%] md:left-[8%] md:right-[8%] lg:left-[10%] lg:right-[10%] h-20 md:h-28 lg:h-32 backdrop-blur-md bg-[#102B2A]/60 rounded-b-sm z-[-1]" />
+
+        <div className="relative h-24 md:h-28 lg:h-32 z-10">
+
 
           <div className="absolute left-[8%] md:left-[10%] lg:left-[10%] top-1/2 -translate-y-1/2">
             <img
@@ -89,9 +89,9 @@ const Navbar = () => {
 
         <div className="absolute top-20 md:top-28 lg:top-32 left-8 right-8 md:left-16 md:right-16 lg:left-40 lg:right-40 h-px bg-[#C9A581]/20"></div>
 
-{/* Sliding Menu */}
-<div
-  className={`fixed
+        {/* Sliding Menu */}
+        <div
+          className={`fixed
 top-[5rem] md:top-[7rem] lg:top-[8rem]
  left-[4%] w-[92%]
 md:left-[5%] md:w-[90%]
@@ -104,21 +104,20 @@ lg:left-[10%] lg:w-[80%]
   transition-all
   duration-900
   ease-[cubic-bezier(0.22,1,0.36,1.5)]
-  ${
-    menuOpen
-      ? "scale-y-100 opacity-100"
-      : "scale-y-0 opacity-0 pointer-events-none"
-  }
+  ${menuOpen
+              ? "scale-y-100 opacity-100"
+              : "scale-y-0 opacity-0 pointer-events-none"
+            }
 `}
->
-  <div className="flex flex-col items-center justify-center h-full gap-2 md:gap-3 lg:gap-4">
+        >
+          <div className="flex flex-col items-center justify-center h-full gap-2 md:gap-3 lg:gap-4">
 
-    {links.map((link, index) => (
-      <Link
-        key={index}
-        to={link.path}
-        onClick={() => setMenuOpen(false)}
-        className="
+            {links.map((link, index) => (
+              <Link
+                key={index}
+                to={link.path}
+                onClick={() => setMenuOpen(false)}
+                className="
           relative
           text-[#C9A581]
           text-2xl
@@ -133,11 +132,11 @@ lg:left-[10%] lg:w-[80%]
           hover:scale-105
           group
         "
-      >
-        {link.name}
+              >
+                {link.name}
 
-        <span
-          className="
+                <span
+                  className="
             absolute
             left-0
             -bottom-1
@@ -148,12 +147,12 @@ lg:left-[10%] lg:w-[80%]
             duration-500
             group-hover:w-full
           "
-        />
-      </Link>
-    ))}
+                />
+              </Link>
+            ))}
 
-  </div>
-</div>
+          </div>
+        </div>
       </div>
 
       <div className="absolute top-1 md:top-4 left-1/2 -translate-x-1/2 w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] h-px bg-[#C9A581]/20"></div>

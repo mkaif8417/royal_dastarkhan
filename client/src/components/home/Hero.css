@@ -1,0 +1,155 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.side-image,
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.side-image p,
+.right-content p {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.side-image img,
+.right-content img {
+  width: 70px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image img {
+  margin-top: 40%;
+  width: 290px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 45%;
+  cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero-container {
+    gap: 25px;
+    padding: 15px;
+  }
+
+  .main-image img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .side-image img,
+  .right-content img {
+    width: 60px;
+    height: 85px;
+  }
+
+  .side-image p,
+  .right-content p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  /* Main image first */
+  .main-image {
+    order: 1;
+  }
+
+  .side-image {
+    order: 2;
+    width: 100%;
+  }
+
+  .right-content {
+    order: 3;
+    width: 100%;
+  }
+
+  .main-image img {
+    width: 260px;
+    height: 340px;
+  }
+
+  .side-image img,
+  .right-content img {
+    width: 55px;
+    height: 80px;
+  }
+
+  .side-image p,
+  .right-content p {
+    font-size: 14px;
+    max-width: 300px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .main-image img {
+    width: 220px;
+    height: 300px;
+  }
+
+  .side-image p,
+  .right-content p {
+    font-size: 13px;
+  }
+}
+
+
+
+.hero-divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.hero-divider span {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #c9a66b,
+    #e2c58b,
+    #c9a66b,
+    transparent
+  );
+}
+
+.divider-icon {
+  color: #c9a66b;
+  font-size: 32px;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(201, 166, 107, 0.3);
+}
